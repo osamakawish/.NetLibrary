@@ -1,0 +1,9 @@
+C:\Users\osama\source\repos\CSharpClassLibrary\StockData\bin\Debug\netstandard2.0\StockData.deps.json
+C:\Users\osama\source\repos\CSharpClassLibrary\StockData\bin\Debug\netstandard2.0\StockData.dll
+C:\Users\osama\source\repos\CSharpClassLibrary\StockData\bin\Debug\netstandard2.0\StockData.pdb
+C:\Users\osama\source\repos\CSharpClassLibrary\StockData\obj\Debug\netstandard2.0\StockData.csprojAssemblyReference.cache
+C:\Users\osama\source\repos\CSharpClassLibrary\StockData\obj\Debug\netstandard2.0\StockData.AssemblyInfoInputs.cache
+C:\Users\osama\source\repos\CSharpClassLibrary\StockData\obj\Debug\netstandard2.0\StockData.AssemblyInfo.cs
+C:\Users\osama\source\repos\CSharpClassLibrary\StockData\obj\Debug\netstandard2.0\StockData.csproj.CoreCompileInputs.cache
+C:\Users\osama\source\repos\CSharpClassLibrary\StockData\obj\Debug\netstandard2.0\StockData.dll
+C:\Users\osama\source\repos\CSharpClassLibrary\StockData\obj\Debug\netstandard2.0\StockData.pdb

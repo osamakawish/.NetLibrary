@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlDataAccess", "SqlDataAccess\SqlDataAccess.csproj", "{7D373725-E79D-442B-8648-9881E5A234D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockInfo", "StockInfo\StockInfo.csproj", "{EFB8B122-C4F3-40F6-9CA2-3D276CAEE24A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.csproj", "{7FF33ED6-181B-4970-828D-80BA946D205B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D373725-E79D-442B-8648-9881E5A234D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D373725-E79D-442B-8648-9881E5A234D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D373725-E79D-442B-8648-9881E5A234D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D373725-E79D-442B-8648-9881E5A234D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFB8B122-C4F3-40F6-9CA2-3D276CAEE24A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFB8B122-C4F3-40F6-9CA2-3D276CAEE24A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFB8B122-C4F3-40F6-9CA2-3D276CAEE24A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFB8B122-C4F3-40F6-9CA2-3D276CAEE24A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FF33ED6-181B-4970-828D-80BA946D205B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FF33ED6-181B-4970-828D-80BA946D205B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FF33ED6-181B-4970-828D-80BA946D205B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FF33ED6-181B-4970-828D-80BA946D205B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C23F2AAD-31B5-418B-B034-5D1A650A8A22}
+	EndGlobalSection
+EndGlobal

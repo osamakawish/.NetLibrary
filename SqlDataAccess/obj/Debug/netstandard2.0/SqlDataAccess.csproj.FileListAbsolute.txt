@@ -1,0 +1,9 @@
+C:\Users\osama\source\repos\CSharpClassLibrary\SqlDataAccess\bin\Debug\netstandard2.0\SqlDataAccess.deps.json
+C:\Users\osama\source\repos\CSharpClassLibrary\SqlDataAccess\bin\Debug\netstandard2.0\SqlDataAccess.dll
+C:\Users\osama\source\repos\CSharpClassLibrary\SqlDataAccess\bin\Debug\netstandard2.0\SqlDataAccess.pdb
+C:\Users\osama\source\repos\CSharpClassLibrary\SqlDataAccess\obj\Debug\netstandard2.0\SqlDataAccess.csprojAssemblyReference.cache
+C:\Users\osama\source\repos\CSharpClassLibrary\SqlDataAccess\obj\Debug\netstandard2.0\SqlDataAccess.AssemblyInfoInputs.cache
+C:\Users\osama\source\repos\CSharpClassLibrary\SqlDataAccess\obj\Debug\netstandard2.0\SqlDataAccess.AssemblyInfo.cs
+C:\Users\osama\source\repos\CSharpClassLibrary\SqlDataAccess\obj\Debug\netstandard2.0\SqlDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\osama\source\repos\CSharpClassLibrary\SqlDataAccess\obj\Debug\netstandard2.0\SqlDataAccess.dll
+C:\Users\osama\source\repos\CSharpClassLibrary\SqlDataAccess\obj\Debug\netstandard2.0\SqlDataAccess.pdb

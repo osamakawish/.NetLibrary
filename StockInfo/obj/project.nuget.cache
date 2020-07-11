@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "0duGpx8VWmxZGQr9JhxpjGQf+9A7FYwZ+oEMzzX+sPqOhiYrwlWUloAe3hPZBDq6UTGXIqm7qfh7jAksvobx8g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\osama\\source\\repos\\CSharpClassLibrary\\StockInfo\\StockInfo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\osama\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\osama\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\osama\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
