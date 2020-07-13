@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlDataAccess", "SqlDataAcc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockInfo", "StockInfo\StockInfo.csproj", "{EFB8B122-C4F3-40F6-9CA2-3D276CAEE24A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.csproj", "{7FF33ED6-181B-4970-828D-80BA946D205B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strings", "Strings\Strings.csproj", "{7FF33ED6-181B-4970-828D-80BA946D205B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
