@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\osama\\source\\repos\\CSharpClassLibrary\\Strings\\Strings.csproj": {}
+    "C:\\Users\\osama\\source\\repos\\.NetLibrary\\Strings\\Strings.csproj": {}
   },
   "projects": {
-    "C:\\Users\\osama\\source\\repos\\CSharpClassLibrary\\Strings\\Strings.csproj": {
+    "C:\\Users\\osama\\source\\repos\\.NetLibrary\\Strings\\Strings.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\osama\\source\\repos\\CSharpClassLibrary\\Strings\\Strings.csproj",
+        "projectUniqueName": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\Strings\\Strings.csproj",
         "projectName": "Strings",
-        "projectPath": "C:\\Users\\osama\\source\\repos\\CSharpClassLibrary\\Strings\\Strings.csproj",
+        "projectPath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\Strings\\Strings.csproj",
         "packagesPath": "C:\\Users\\osama\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\osama\\source\\repos\\CSharpClassLibrary\\Strings\\obj\\",
+        "outputPath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\Strings\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

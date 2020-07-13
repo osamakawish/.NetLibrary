@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d9eA+Yf9cq/r4GSJ6ubxoXBpCN+2c0OizIKykhjRMtNRI5y2+WrjTG5GUKIPR7vTm1fzgfyisRCJLF+Tz/TWTA==",
+  "dgSpecHash": "ftkd6GTYr8dLETMu8PS1gTJQaahJFsjt/15iZaZH2epQhXf/C365ZtvSzDAyiWkMlfsBo4+KK86hU/J+uY0YLA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\osama\\source\\repos\\CSharpClassLibrary\\Strings\\Strings.csproj",
+  "projectFilePath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\Strings\\RegularExpressions.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\osama\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\osama\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

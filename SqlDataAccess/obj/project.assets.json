@@ -858,11 +858,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\osama\\source\\repos\\CSharpClassLibrary\\SqlDataAccess\\SqlDataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\SqlDataAccess\\SqlDataAccess.csproj",
       "projectName": "SqlDataAccess",
-      "projectPath": "C:\\Users\\osama\\source\\repos\\CSharpClassLibrary\\SqlDataAccess\\SqlDataAccess.csproj",
+      "projectPath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\SqlDataAccess\\SqlDataAccess.csproj",
       "packagesPath": "C:\\Users\\osama\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\osama\\source\\repos\\CSharpClassLibrary\\SqlDataAccess\\obj\\",
+      "outputPath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\SqlDataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

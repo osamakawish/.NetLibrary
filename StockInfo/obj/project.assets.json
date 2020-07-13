@@ -227,11 +227,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\osama\\source\\repos\\CSharpClassLibrary\\StockInfo\\StockInfo.csproj",
+      "projectUniqueName": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\StockInfo\\StockInfo.csproj",
       "projectName": "StockInfo",
-      "projectPath": "C:\\Users\\osama\\source\\repos\\CSharpClassLibrary\\StockInfo\\StockInfo.csproj",
+      "projectPath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\StockInfo\\StockInfo.csproj",
       "packagesPath": "C:\\Users\\osama\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\osama\\source\\repos\\CSharpClassLibrary\\StockInfo\\obj\\",
+      "outputPath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\StockInfo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

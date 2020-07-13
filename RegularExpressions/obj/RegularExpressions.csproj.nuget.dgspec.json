@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\osama\\source\\repos\\.NetLibrary\\StockInfo\\StockInfo.csproj": {}
+    "C:\\Users\\osama\\source\\repos\\.NetLibrary\\Strings\\RegularExpressions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\osama\\source\\repos\\.NetLibrary\\StockInfo\\StockInfo.csproj": {
+    "C:\\Users\\osama\\source\\repos\\.NetLibrary\\Strings\\RegularExpressions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\StockInfo\\StockInfo.csproj",
-        "projectName": "StockInfo",
-        "projectPath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\StockInfo\\StockInfo.csproj",
+        "projectUniqueName": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\Strings\\RegularExpressions.csproj",
+        "projectName": "RegularExpressions",
+        "projectPath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\Strings\\RegularExpressions.csproj",
         "packagesPath": "C:\\Users\\osama\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\StockInfo\\obj\\",
+        "outputPath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\Strings\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -47,10 +47,6 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[12.0.3, )"
             }
           },
           "imports": [
