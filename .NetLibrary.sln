@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlDataAccess", "SqlDataAcc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockInfo", "StockInfo\StockInfo.csproj", "{EFB8B122-C4F3-40F6-9CA2-3D276CAEE24A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegularExpressions", "Strings\RegularExpressions.csproj", "{7FF33ED6-181B-4970-828D-80BA946D205B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegularExpressions", "RegularExpressions\RegularExpressions.csproj", "{CA26A680-08AE-4351-A3B2-1C3D60CA9D48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{EFB8B122-C4F3-40F6-9CA2-3D276CAEE24A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFB8B122-C4F3-40F6-9CA2-3D276CAEE24A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFB8B122-C4F3-40F6-9CA2-3D276CAEE24A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7FF33ED6-181B-4970-828D-80BA946D205B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7FF33ED6-181B-4970-828D-80BA946D205B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7FF33ED6-181B-4970-828D-80BA946D205B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7FF33ED6-181B-4970-828D-80BA946D205B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA26A680-08AE-4351-A3B2-1C3D60CA9D48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA26A680-08AE-4351-A3B2-1C3D60CA9D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA26A680-08AE-4351-A3B2-1C3D60CA9D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA26A680-08AE-4351-A3B2-1C3D60CA9D48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

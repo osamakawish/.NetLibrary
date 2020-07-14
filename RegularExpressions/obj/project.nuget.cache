@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ftkd6GTYr8dLETMu8PS1gTJQaahJFsjt/15iZaZH2epQhXf/C365ZtvSzDAyiWkMlfsBo4+KK86hU/J+uY0YLA==",
+  "dgSpecHash": "96M8G50b/cF3hKaHTxphGfJPwT2gOjvZhd1hBf5z93jqSDR0BIAjDUfh+Zm9doO2jWbMOOTugSpTh2E0DX4WJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\Strings\\RegularExpressions.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\osama\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\osama\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\RegularExpressions\\RegularExpressions.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
