@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace Strings
+namespace RegularExpressions
 {
     [Serializable]
     internal class NotEscapeException : Exception

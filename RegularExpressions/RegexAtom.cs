@@ -2,47 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 
-namespace Strings
+namespace RegularExpressions
 {
     /// <summary>
-    /// A Regex Atom corresponds to the most basic element in a regex pattern, like a . or a [abce], which isolates a single character.
-    /// Captures a function that represents what sort of characters are acceptable here.
+    /// A Regex Atom corresponds to a component of a pattern capturing a single character.
     /// </summary>
     /// <example>'.' corresponds to </example>
-    internal class RegexAtom
+    public class RegexAtom : IRegexElement
     {
-        public enum Specialty { None, Character, Group };
-        public const string SpecialChars = "-,.|?*+^$[](){}\\";
-        public const string SpecialGroups = "wsd"; // For \w, \s, \d, etc. groups
-
         internal Func<char, bool> Func { get; private set; }
-
-        /// <summary>
-        /// Returns true if the character at index i is escaped appropriately. Also return false if inde
-        /// </summary>
-        /// <param name="s"></param>
-        /// <param name="i"></param>
-        /// <returns></returns>
-        public static bool IsLegallyEscaped(in string s, int i) => s[i - 1] == '\\' && Special(s[i]) == Specialty.None;
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="ch"></param>
-        /// <returns></returns>
-        public static Specialty Special(char ch)
-        {
-            String c = ch.ToString();
-            if (SpecialChars.Contains(c)) return Specialty.Character;
-            else if (SpecialGroups.Contains(c)) return Specialty.Group;
-            else return Specialty.None;
-        }
 
         /// <summary>
         /// 
         /// </summary>
         public RegexAtom() => Func = (ch) => false;
+
+        public RegexAtom(bool s) => Func = (ch) => s;
 
         /// <summary>
         /// 
@@ -56,8 +33,9 @@ namespace Strings
         /// <param name="s"></param>
         public RegexAtom(string s)
         {
+            ParallelQuery<char> query = s.AsParallel();
             // Isolate escape characters and group dashes
-            Func = (ch) => s.Contains(ch.ToString());
+            Func = (ch) => Contains(query, ch);
         }
 
         /// <summary>
@@ -85,7 +63,7 @@ namespace Strings
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
-        public static List<RegexAtom> Atoms(string s)
+        public static List<RegexAtom> AtomsMatchingString(string s)
         {
             List<RegexAtom> atoms = new List<RegexAtom>();
             foreach (var ch in s) { atoms.Add(new RegexAtom(ch)); }
@@ -99,62 +77,19 @@ namespace Strings
         /// <param name="s"></param>
         /// <param name="i"></param>
         /// <returns></returns>
-        private static RegexAtom GetRange(in string s, int i) => new RegexAtom((char)(s[i - 1] + 1), s[i + 1]);
+        internal static RegexAtom GetRange(in string s, int i) => new RegexAtom((char)(s[i - 1] + 1), s[i + 1]);
 
-        /// <summary>
-        /// Deals with case where s[i-1] is '[' until string finishes or reaches ']'.
-        /// </summary>
-        /// <param name="s">Pattern string</param>
-        /// <param name="i">Starting index</param>
-        /// <returns></returns>
-        public static RegexAtom FromBracketed(in string s, ref int i)
-        {
-            // Note, only "\[]-" are special characters here. - only matter 
+        public static implicit operator RegexAtom(bool ch) => new RegexAtom(ch);
 
-            bool escaped = false;
-            RegexAtom atom = new RegexAtom();
+        public static implicit operator RegexAtom(char ch) => new RegexAtom(ch);
 
-            int l = s.Length;
-
-            while ((s[i] != ']' || !escaped) && i < l)
-            {
-                char ch = s[i];
-
-                if (!escaped)
-                {
-                    if (ch == '\\') escaped = true;
-
-                    // If the '-' is between two characters not at end of string or before a bracket
-                    else if (ch == '-' && i > 0 && i + 1 < l && s[i + 1] != ']')
-                    {
-                        atom |= GetRange(s, i);
-                        i++; // Additional increment to skip next char as it's part of range.
-                    }
-
-                    else
-                    {
-                        atom |= new RegexAtom(ch);
-                    }
-                }
-                else
-                {
-                    atom |= (Special(ch)) switch
-                    {
-                        Specialty.Group => SpecialAtom(ch),
-                        _ => new RegexAtom(ch)
-                    };
-                    escaped = false;
-                }
-
-                i++;
-            }
-
-            return atom;
-        }
+        public static implicit operator RegexAtom(string s) => new RegexAtom(s);
 
         public static RegexAtom operator |(RegexAtom atom1, RegexAtom atom2) => new RegexAtom((ch) => atom1.Func(ch) || atom2.Func(ch));
 
-        private static RegexAtom SpecialAtom(char sp)
+        public static RegexAtom operator &(RegexAtom atom1, RegexAtom atom2) => new RegexAtom((ch) => atom1.Func(ch) && atom2.Func(ch));
+
+        internal static RegexAtom SpecialAtom(char sp)
         {
             return sp switch
             {
@@ -165,22 +100,47 @@ namespace Strings
                 _ => null,
             };
         }
+
+        internal static bool Contains(in ParallelQuery<char> s, char ch) => s.Where((c) => c == ch).Count() != 0;
     }
 
     /// <summary>
-    /// A collection of identical RegexAtom patterns.
+    /// RegexAtom with an associated range for similarity.
     /// </summary>
     internal class AtomGroup
     {
         public RegexAtom RegexAtom { get; private set; }
-        public int MinCount { get; private set; }
-        public int? MaxCount { get; private set; }
+        public Limits Limits { get; private set; }
+        public int Min => Limits.Min;
+        public int? Max => Limits.Max;
 
-        public AtomGroup(RegexAtom atom, int min=0, int? max=1)
+        public AtomGroup(RegexAtom atom, int min=1, int? max=1)
         {
-            RegexAtom = atom; MinCount = min; MaxCount = max;
+            RegexAtom = atom; Limits = new Limits(min, max);
         }
 
         public static implicit operator AtomGroup(RegexAtom atom) => new AtomGroup(atom);
+    }
+
+    public class Limits
+    {
+        public static Limits RegexLimits(char c)
+        {
+            return c switch
+            {
+                '?' => new Limits(0),
+                '*' => new Limits(0, null),
+                '+' => new Limits(max: null),
+                _ => new Limits()
+            };
+        }
+
+        public int Min { get; private set; }
+        public int? Max { get; private set; }
+
+        public Limits(int min=1, int? max=1)
+        {
+            Min = min; Max = max;
+        }
     }
 }
