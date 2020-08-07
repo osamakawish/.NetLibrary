@@ -4,7 +4,8 @@ using System.Threading;
 
 namespace RegExt
 {
-    public delegate bool PatternFunc(in string s, ref int i, PatternFunc prev=null, PatternFunc next=null);
+    // This will create bugs when the delegate is only intended to test the next element.
+    internal delegate bool PatternFunc(in string s, ref int i, PatternFunc prev=null, PatternFunc next=null);
 
     public class Pattern
     {
