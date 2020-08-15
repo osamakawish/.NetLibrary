@@ -1,9 +1,18 @@
-﻿namespace RegExt
+﻿using System.Collections.Generic;
+
+namespace RegExt
 {
     internal class TryMatch
     {
-        public TryMatch()
+        internal IEnumerable<TryMatch> tries;
+
+        internal TryMatch()
         {
+        }
+
+        public static implicit operator TryMatch(PatternMatch match)
+        {
+            
         }
     }
 }

@@ -1,10 +1,15 @@
-﻿namespace RegExt
+﻿using System.Collections.Generic;
+
+namespace RegExt
 {
     public class PatternMatch
     {
-        internal TryMatch Match;
+        /// <summary>
+        /// Internal captures of the match
+        /// </summary>
+        internal IEnumerable<TryMatch> Matches;
 
-        internal PatternMatch(TryMatch tryMatch)
+        internal PatternMatch()
         {
 
         }

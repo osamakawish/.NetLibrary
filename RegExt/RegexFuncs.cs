@@ -11,6 +11,7 @@ namespace RegExt
     // To implement optionalCountable (ie. "_*", convert it to "?_*" first, then implement)
     internal static class RegexFuncs
     {
+        // Need to implement null PatternFunc cases in all of these.
         internal static PatternFunc AnyChar =>
             delegate (in string s, ref int i, PatternFunc prev, PatternFunc next) { return true; };
 
@@ -49,7 +50,7 @@ namespace RegExt
             delegate (in string s, ref int i, PatternFunc prev, PatternFunc next) { return WordEnd(s, ref i, prev, next) || LineEnd(s, ref i, prev, next); };
 
         internal static PatternFunc Countable
-            => delegate (in string s, ref int i, PatternFunc prev, PatternFunc next) { int j = i; while (prev(s, ref i) && !next(s,ref i)) i++; return j > i; };
+            => delegate (in string s, ref int i, PatternFunc prev, PatternFunc next) { int j = i; while (prev(s, ref i) && !next(s, ref i)) i++; return j > i; };
 
         internal static PatternFunc ExactChar(char ch)
             => delegate (in string s, ref int i, PatternFunc prev, PatternFunc next) { return s[i] == ch; };
@@ -70,6 +71,12 @@ namespace RegExt
             };
 
         internal static PatternFunc FromAscii
+            => delegate (in string s, ref int i, PatternFunc prev, PatternFunc next)
+            {
+                throw new NotImplementedException();
+            };
+
+        internal static PatternFunc WithRange(PatternFunc func, Range range)
             => delegate (in string s, ref int i, PatternFunc prev, PatternFunc next)
             {
                 throw new NotImplementedException();
@@ -109,5 +116,29 @@ namespace RegExt
         };
 
         internal static PatternFunc Escaped(char ch) => EscapedChar.TryGetValue(ch, out PatternFunc func) ? func : ExactChar(ch);
+
+        internal static Dictionary<char, PatternFunc> SpecialChars => new Dictionary<char, PatternFunc>
+        {
+            {'.', AnyChar},
+            {'+', Countable},
+            {'?', Optional},
+            {'*', Countable},
+            {'^', LineStart},
+            {'$', LineEnd}
+            // Add other special characters.
+        };
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ch"></param>
+        /// <param name="funcPrev">If char is '*', funcPrev is Optional. Otherwise, it's null.</param>
+        /// <returns></returns>
+        internal static PatternFunc Special(char ch, out PatternFunc funcPrev)
+        {
+            funcPrev = ch == '*' ? Optional : null;
+
+            return SpecialChars.TryGetValue(ch, out PatternFunc @return) ? @return : ExactChar(ch);
+        }
     }
 }

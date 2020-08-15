@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Osama Kawish</Authors>
+    <Company />
+    <Description>Basic data structures convenient for many applications.</Description>
+    <PackageLicenseExpression></PackageLicenseExpression>
+  </PropertyGroup>
+
+</Project>

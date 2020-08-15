@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockInfo", "StockInfo\Stoc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegularExpressions", "RegularExpressions\RegularExpressions.csproj", "{CA26A680-08AE-4351-A3B2-1C3D60CA9D48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegExt", "RegExt\RegExt.csproj", "{99F42C55-A9BF-4D08-90E3-B939CC65A449}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegExt", "RegExt\RegExt.csproj", "{99F42C55-A9BF-4D08-90E3-B939CC65A449}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{91CA56A6-7173-4CDC-9612-B48206A3D6B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{99F42C55-A9BF-4D08-90E3-B939CC65A449}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99F42C55-A9BF-4D08-90E3-B939CC65A449}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99F42C55-A9BF-4D08-90E3-B939CC65A449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91CA56A6-7173-4CDC-9612-B48206A3D6B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91CA56A6-7173-4CDC-9612-B48206A3D6B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91CA56A6-7173-4CDC-9612-B48206A3D6B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91CA56A6-7173-4CDC-9612-B48206A3D6B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
