@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace DataStructures
+namespace Thorns
 {
     /// <summary>
     /// A tree data structure.

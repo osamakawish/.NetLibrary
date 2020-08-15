@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
-    <id>DataStructures</id>
+    <id>Thorns</id>
     <version>1.0.0</version>
     <authors>Osama Kawish</authors>
     <owners>Osama Kawish</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Basic data structures convenient for many applications.</description>
+    <description>Basic data structures in C# convenient for many applications.</description>
     <releaseNotes>Initial release.</releaseNotes>
     <dependencies>
       <group targetFramework=".NETStandard2.0" />
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\osama\source\repos\.NetLibrary\DataStructures\bin\Release\netstandard2.0\DataStructures.dll" target="lib\netstandard2.0\DataStructures.dll" />
+    <file src="C:\Users\osama\source\repos\.NetLibrary\DataStructures\bin\Release\netstandard2.0\Thorns.dll" target="lib\netstandard2.0\Thorns.dll" />
   </files>
 </package>

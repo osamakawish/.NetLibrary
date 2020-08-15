@@ -186,9 +186,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\DataStructures\\DataStructures.csproj",
-      "projectName": "DataStructures",
-      "projectPath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\DataStructures\\DataStructures.csproj",
+      "projectUniqueName": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\DataStructures\\Thorns.csproj",
+      "projectName": "Thorns",
+      "projectPath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\DataStructures\\Thorns.csproj",
       "packagesPath": "C:\\Users\\osama\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\DataStructures\\obj\\",
       "projectStyle": "PackageReference",

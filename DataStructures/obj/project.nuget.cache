@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+XLjNFzY+tkqW4xRKKtCiJnUg8CsjDo/yzfsJbp3NW68MPFDkyVHYmLsxbiBw17gFhgMSJo/oMX7HSCR4qr2oA==",
+  "dgSpecHash": "8pCQlJllJ7N0UD98hxgiUqmXz+4DapObIQiQxpnjDH6Lo4o20qL+EewRfWGBE8q3xWvAgCUXIUo8ZcDDORQx/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\DataStructures\\DataStructures.csproj",
+  "projectFilePath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\DataStructures\\Thorns.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\osama\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\osama\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

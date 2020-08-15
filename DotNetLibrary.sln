@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegularExpressions", "Regul
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegExt", "RegExt\RegExt.csproj", "{99F42C55-A9BF-4D08-90E3-B939CC65A449}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{91CA56A6-7173-4CDC-9612-B48206A3D6B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thorns", "DataStructures\Thorns.csproj", "{91CA56A6-7173-4CDC-9612-B48206A3D6B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

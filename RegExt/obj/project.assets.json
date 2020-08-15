@@ -2,28 +2,28 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.1": {
-      "DataStructures/1.0.0": {
+      "Thorns/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
-          "bin/placeholder/DataStructures.dll": {}
+          "bin/placeholder/Thorns.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataStructures.dll": {}
+          "bin/placeholder/Thorns.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "DataStructures/1.0.0": {
+    "Thorns/1.0.0": {
       "type": "project",
-      "path": "../DataStructures/DataStructures.csproj",
-      "msbuildProject": "../DataStructures/DataStructures.csproj"
+      "path": "../DataStructures/Thorns.csproj",
+      "msbuildProject": "../DataStructures/Thorns.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
-      "DataStructures >= 1.0.0"
+      "Thorns >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -58,8 +58,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\Users\\osama\\source\\repos\\.NetLibrary\\DataStructures\\DataStructures.csproj": {
-              "projectPath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\DataStructures\\DataStructures.csproj"
+            "C:\\Users\\osama\\source\\repos\\.NetLibrary\\DataStructures\\Thorns.csproj": {
+              "projectPath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\DataStructures\\Thorns.csproj"
             }
           }
         }
