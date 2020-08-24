@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Thorns
+namespace Concision.Thorns
 {
     /// <summary>
     /// A tree data structure.
@@ -19,15 +19,20 @@ namespace Thorns
         /// The parent of this node of the tree.
         /// </summary>
         public OrderedTree<T> Parent { get; private set; }
-        internal readonly List<OrderedTree<T>> children;
+        internal List<OrderedTree<T>> children = new List<OrderedTree<T>>();
 
         /// <summary>
         /// Creates a new tree with this instance at its root. Each instance is a node of the tree.
         /// </summary>
         /// <param name="val">The value of the node associated with the tree.</param>
-        public OrderedTree(T val) { Value = val; Parent = null; children = new List<OrderedTree<T>>(); }
+        public OrderedTree(T val) { Value = val; Parent = null; }
 
-        private OrderedTree(T val, OrderedTree<T> parent) { Value = val; Parent = parent; parent.children.Add(this); }
+        private OrderedTree(T val, OrderedTree<T> parent)
+        {
+            Value = val;
+            Parent = parent;
+            parent.children.Add(this);
+        }
 
         /// <summary>
         /// 
@@ -47,7 +52,28 @@ namespace Thorns
         /// </summary>
         /// <param name="values">The values for the children tree nodes.</param>
         /// <returns>The children nodes created.</returns>
-        public IEnumerable<OrderedTree<T>> AddChildren(params T[] values) => from T val in values select new OrderedTree<T>(val, this);
+        public IEnumerable<OrderedTree<T>> AddChildren(params T[] values)
+        {
+            List<OrderedTree<T>> list = new List<OrderedTree<T>>();
+
+            foreach (var val in values)
+            {
+                list.Add(new OrderedTree<T>(val, this));
+            }
+
+            return list;
+        }
+
+        /// <summary>
+        /// Adds all the values as this tree node's children, but yields the result.
+        /// </summary>
+        /// <param name="values">The values for the children tree nodes.</param>
+        /// <returns>The children nodes created.</returns>
+        /// <remarks>Use this only if a foreach loop over the children is eventually called.</remarks>
+        public IEnumerable<OrderedTree<T>> AddChildrenYielded(params T[] values)
+        {
+            foreach (var val in values) yield return new OrderedTree<T>(val, this);
+        }
 
         /// <summary>
         /// Adds all the values as this tree node's children.

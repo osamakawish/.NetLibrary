@@ -1,0 +1,9 @@
+C:\Users\osama\source\repos\.NetLibrary\DataStructures\bin\Debug\netstandard2.0\Thorns.deps.json
+C:\Users\osama\source\repos\.NetLibrary\DataStructures\bin\Debug\netstandard2.0\Thorns.dll
+C:\Users\osama\source\repos\.NetLibrary\DataStructures\bin\Debug\netstandard2.0\Thorns.pdb
+C:\Users\osama\source\repos\.NetLibrary\DataStructures\obj\Debug\netstandard2.0\Thorns.AssemblyInfoInputs.cache
+C:\Users\osama\source\repos\.NetLibrary\DataStructures\obj\Debug\netstandard2.0\Thorns.AssemblyInfo.cs
+C:\Users\osama\source\repos\.NetLibrary\DataStructures\obj\Debug\netstandard2.0\Thorns.csproj.CoreCompileInputs.cache
+C:\Users\osama\source\repos\.NetLibrary\DataStructures\obj\Debug\netstandard2.0\Thorns.dll
+C:\Users\osama\source\repos\.NetLibrary\DataStructures\obj\Debug\netstandard2.0\Thorns.pdb
+C:\Users\osama\source\repos\.NetLibrary\DataStructures\obj\Debug\netstandard2.0\Thorns.csprojAssemblyReference.cache

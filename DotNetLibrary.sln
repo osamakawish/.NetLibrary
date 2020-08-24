@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegExt", "RegExt\RegExt.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thorns", "DataStructures\Thorns.csproj", "{91CA56A6-7173-4CDC-9612-B48206A3D6B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Placement", "Placement\Placement.csproj", "{0F04248D-C081-4F84-90DF-CCC3BB026F8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concision.Tests", "Concision.Tests\Concision.Tests.csproj", "{FD28E3C4-A9EB-4DA3-9B39-2CA6AB1D787C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{91CA56A6-7173-4CDC-9612-B48206A3D6B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91CA56A6-7173-4CDC-9612-B48206A3D6B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91CA56A6-7173-4CDC-9612-B48206A3D6B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F04248D-C081-4F84-90DF-CCC3BB026F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F04248D-C081-4F84-90DF-CCC3BB026F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F04248D-C081-4F84-90DF-CCC3BB026F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F04248D-C081-4F84-90DF-CCC3BB026F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD28E3C4-A9EB-4DA3-9B39-2CA6AB1D787C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD28E3C4-A9EB-4DA3-9B39-2CA6AB1D787C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD28E3C4-A9EB-4DA3-9B39-2CA6AB1D787C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD28E3C4-A9EB-4DA3-9B39-2CA6AB1D787C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

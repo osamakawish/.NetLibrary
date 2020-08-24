@@ -1,0 +1,16 @@
+C:\Users\osama\source\repos\.NetLibrary\Concision.Tests\bin\Debug\netcoreapp3.1\Concision.Tests.exe
+C:\Users\osama\source\repos\.NetLibrary\Concision.Tests\bin\Debug\netcoreapp3.1\Concision.Tests.deps.json
+C:\Users\osama\source\repos\.NetLibrary\Concision.Tests\bin\Debug\netcoreapp3.1\Concision.Tests.runtimeconfig.json
+C:\Users\osama\source\repos\.NetLibrary\Concision.Tests\bin\Debug\netcoreapp3.1\Concision.Tests.runtimeconfig.dev.json
+C:\Users\osama\source\repos\.NetLibrary\Concision.Tests\bin\Debug\netcoreapp3.1\Concision.Tests.dll
+C:\Users\osama\source\repos\.NetLibrary\Concision.Tests\bin\Debug\netcoreapp3.1\Concision.Tests.pdb
+C:\Users\osama\source\repos\.NetLibrary\Concision.Tests\bin\Debug\netcoreapp3.1\Thorns.dll
+C:\Users\osama\source\repos\.NetLibrary\Concision.Tests\bin\Debug\netcoreapp3.1\Thorns.pdb
+C:\Users\osama\source\repos\.NetLibrary\Concision.Tests\obj\Debug\netcoreapp3.1\Concision.Tests.csprojAssemblyReference.cache
+C:\Users\osama\source\repos\.NetLibrary\Concision.Tests\obj\Debug\netcoreapp3.1\Concision.Tests.AssemblyInfoInputs.cache
+C:\Users\osama\source\repos\.NetLibrary\Concision.Tests\obj\Debug\netcoreapp3.1\Concision.Tests.AssemblyInfo.cs
+C:\Users\osama\source\repos\.NetLibrary\Concision.Tests\obj\Debug\netcoreapp3.1\Concision.Tests.csproj.CoreCompileInputs.cache
+C:\Users\osama\source\repos\.NetLibrary\Concision.Tests\obj\Debug\netcoreapp3.1\Concision.Tests.csproj.CopyComplete
+C:\Users\osama\source\repos\.NetLibrary\Concision.Tests\obj\Debug\netcoreapp3.1\Concision.Tests.dll
+C:\Users\osama\source\repos\.NetLibrary\Concision.Tests\obj\Debug\netcoreapp3.1\Concision.Tests.pdb
+C:\Users\osama\source\repos\.NetLibrary\Concision.Tests\obj\Debug\netcoreapp3.1\Concision.Tests.genruntimeconfig.cache

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LTPnnW2Bqzz5ul4kv3N5XS4dfW5ujIvQvBmkq7uNS8dEUwPOwTQT51cOaPaH3Mco9yNhJ/wiy8YCIYCLNim3/A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\osama\\source\\repos\\.NetLibrary\\Placement\\Placement.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\osama\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\osama\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

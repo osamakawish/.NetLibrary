@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Thorns
+namespace Concision.Thorns
 {
     /// <summary>
     /// A tree data structure.
@@ -19,15 +19,20 @@ namespace Thorns
         /// The parent of this node of the tree.
         /// </summary>
         public Tree<T> Parent { get; private set; }
-        internal readonly HashSet<Tree<T>> children;
+        internal HashSet<Tree<T>> children = new HashSet<Tree<T>>();
 
         /// <summary>
         /// Creates a new tree with this instance at its root. Each instance is a node of the tree.
         /// </summary>
         /// <param name="val">The value of the node associated with the tree.</param>
-        public Tree(T val) { Value = val; Parent = null; children = new HashSet<Tree<T>>(); }
+        public Tree(T val) { Value = val; Parent = null; }
 
-        private Tree(T val, Tree<T> parent) { Value = val; Parent = parent; parent.children.Add(this); }
+        private Tree(T val, Tree<T> parent) 
+        { 
+            Value = val; 
+            Parent = parent; 
+            parent.children.Add(this); 
+        }
 
         /// <summary>
         /// 
@@ -47,7 +52,28 @@ namespace Thorns
         /// </summary>
         /// <param name="values">The values for the children tree nodes.</param>
         /// <returns>The children nodes created.</returns>
-        public IEnumerable<Tree<T>> AddChildren(params T[] values) => from T val in values select new Tree<T>(val, this);
+        public IEnumerable<Tree<T>> AddChildren(params T[] values)
+        {
+            List<Tree<T>> list = new List<Tree<T>>();
+
+            foreach (var val in values)
+            {
+                list.Add(new Tree<T>(val, this));
+            }
+
+            return list;
+        }
+
+        /// <summary>
+        /// Adds all the values as this tree node's children, but yields the result.
+        /// </summary>
+        /// <param name="values">The values for the children tree nodes.</param>
+        /// <returns>The children nodes created.</returns>
+        /// <remarks>Use this only if a foreach loop over the children is eventually called.</remarks>
+        public IEnumerable<Tree<T>> AddChildrenYielded(params T[] values)
+        {
+            foreach (var val in values) yield return new Tree<T>(val, this);
+        }
 
         /// <summary>
         /// Adds all the values as this tree node's children.

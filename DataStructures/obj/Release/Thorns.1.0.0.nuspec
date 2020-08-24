@@ -4,8 +4,9 @@
     <id>Thorns</id>
     <version>1.0.0</version>
     <authors>Osama Kawish</authors>
-    <owners>Osama Kawish</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE.md</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
     <description>Basic data structures in C# convenient for many applications.</description>
     <releaseNotes>Initial release.</releaseNotes>
     <dependencies>
@@ -14,5 +15,6 @@
   </metadata>
   <files>
     <file src="C:\Users\osama\source\repos\.NetLibrary\DataStructures\bin\Release\netstandard2.0\Thorns.dll" target="lib\netstandard2.0\Thorns.dll" />
+    <file src="C:\Users\osama\source\repos\.NetLibrary\DataStructures\LICENSE.md" target="LICENSE.md" />
   </files>
 </package>

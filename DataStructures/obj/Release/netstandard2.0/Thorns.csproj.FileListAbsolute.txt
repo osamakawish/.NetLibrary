@@ -6,3 +6,4 @@ C:\Users\osama\source\repos\.NetLibrary\DataStructures\obj\Release\netstandard2.
 C:\Users\osama\source\repos\.NetLibrary\DataStructures\obj\Release\netstandard2.0\Thorns.csproj.CoreCompileInputs.cache
 C:\Users\osama\source\repos\.NetLibrary\DataStructures\obj\Release\netstandard2.0\Thorns.dll
 C:\Users\osama\source\repos\.NetLibrary\DataStructures\obj\Release\netstandard2.0\Thorns.pdb
+C:\Users\osama\source\repos\.NetLibrary\DataStructures\obj\Release\netstandard2.0\Thorns.csprojAssemblyReference.cache
